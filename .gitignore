@@ -109,7 +109,7 @@ tags
 .history
 
 # ignore build binary
-percona-server-mongodb-operator
+./percona-server-mongodb-operator
 
 !cmd/percona-server-mongodb-operator
 

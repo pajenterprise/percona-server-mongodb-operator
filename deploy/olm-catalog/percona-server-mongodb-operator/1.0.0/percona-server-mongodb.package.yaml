@@ -1,0 +1,5 @@
+packageName: percona-server-mongodb-operator-certified
+channels:
+    - name: alpha
+      currentCSV: percona-server-mongodb-operator.v1.0.0
+defaultChannel: alpha
