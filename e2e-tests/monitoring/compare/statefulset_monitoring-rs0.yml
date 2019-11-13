@@ -41,8 +41,8 @@ spec:
         - --replSet=rs0
         - --storageEngine=wiredTiger
         - --relaxPermChecks
-        - --sslAllowInvalidCertificates
-        - --sslMode=preferSSL
+        - --tlsAllowInvalidCertificates
+        - --tlsMode=preferTLS
         - --clusterAuthMode=x509
         - --profile=2
         - --rateLimit=1
