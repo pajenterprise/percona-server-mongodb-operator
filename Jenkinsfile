@@ -154,7 +154,7 @@ pipeline {
                 stage('E2E Basic Tests') {
                     steps {
                         CreateCluster('basic')
-                        runTest('storage', 'basic')
+                        //runTest('storage', 'basic')
                         // disable unstable test CLOUD-423
                         // runTest('monitoring', 'basic')
                         // runTest('monitoring-2-0', 'basic')
