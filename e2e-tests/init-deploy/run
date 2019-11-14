@@ -24,10 +24,10 @@ compare_kubectl statefulset/$cluster
 compare_kubectl service/$cluster
 
 desc 'check if users created'
-compare_mongo_user "userAdmin:userAdmin123456@$cluster.$namespace"
-compare_mongo_user "backup:backup123456@$cluster.$namespace"
-compare_mongo_user "clusterAdmin:clusterAdmin123456@$cluster.$namespace"
-compare_mongo_user "clusterMonitor:clusterMonitor123456@$cluster.$namespace"
+#compare_mongo_user "userAdmin:userAdmin123456@$cluster.$namespace"
+#compare_mongo_user "backup:backup123456@$cluster.$namespace"
+#compare_mongo_user "clusterAdmin:clusterAdmin123456@$cluster.$namespace"
+#compare_mongo_user "clusterMonitor:clusterMonitor123456@$cluster.$namespace"
 # check that test user don't have access
 ( run_mongo 'db.runCommand({connectionStatus:1,showPrivileges:true})' "test:test@$cluster.$namespace" || :) 2>&1 \
     | grep 'Authentication failed'
